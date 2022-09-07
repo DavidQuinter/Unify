@@ -1,19 +1,20 @@
 .contenedor-header{
     position: relative;
     z-index: 1;
+    margin: 0 3% 10% 3%;
 }
 
 .contenedor-img-perfil{
     position: absolute;
     z-index: 2;
-    width: 30vh;
-    height: 30vh;
-    padding: 1vh;
+    width: 35vh;
+    height: 35vh;
     margin: 0%;
     background-color: white;
     border-radius: 50%;
     bottom: -15vh;
     left: 5%;
+    padding: .8vh;
 }
 .log-out-2{
     display: none;
@@ -22,21 +23,20 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
+    border: solid white;
 }
-.descripcion{
-    margin:10% 40% 0% 4%;
-    font-size: 3vh;
+
+article.descripcion{
+    margin:-2% 40% 0% 4%;
+    font-size: 3.5vh;
 }
 .user{
     font-weight: bold;
 }
 .perfil-mini{
-    height: 8vh;
-    width: 8vh;
+    height: 10vh;
+    width: 10vh;
     border-radius: 50%;
-}
-main{
-
 }
 .usuario-tarjeta{
     display: flex;
@@ -48,24 +48,100 @@ main{
     border-radius: 1.5vh;
 }
 .t-completa{
-    margin: 2% 15%;
+    margin: 2% 5%;
 }
 .imagen-publicada{
-    margin: 0 30%;
+    width: 100%;
+    height: 100%;
 }
-.conetedor-de-imagen{
-    border-radius: 1.5vh;
-    background-color: rgb(199, 199, 199);
+div.conetedor-de-imagen{
+    margin: auto;
 }
+.descripcion{
+    margin-top: 10%;
+}
+@media (min-width: 990px) {
+    .t-completa{
+        margin: 2% 10%;
+        width: 80vh;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 6fr 5fr;
+        margin: 0 3%;
+    }
+    section.news{
+        text-align:center;
+        margin: 10% 5%;
+        border-radius: 1vh;
+        background-color: rgb(235, 235, 235);
+    }
+    .titulo{
+        padding: 2vh;
+    }
+    div.card{
+        margin: auto;
+    }
+}
+@media(max-width: 990px){
+    .contenedor-img-perfil{
+        width: 25vh;
+        height: 25vh;
+        bottom: -10vh;
+        left: 10%;
+        padding: .5vh;
+    }
+    .log-out-1{
+        display: none;
+    }
+    .log-out-2{
+        display: revert;
+    }
+    .descripcion{
+        margin:-2% 20% 2% 5%;
+        font-size: 4vh;
+    }
+    .perfil-mini{
+        height: 10vh;
+        width: 10vh;
+        border-radius: 50%;
+    }
+    .imagen-publicada{
+        margin: auto;
+    }
+    .conetedor-de-imagen{
+        border-radius: 1.5vh;
+        background-color: rgb(199, 199, 199);
+    }
+    .nav-link{
+        font-size: 3.5vh;
+    }
+    div.titulo{
+        display: none;
+    }
+    section.news{
+        margin: auto;
+        text-align: center;
+    }
+    div.card{
+        margin: auto;
+    }
+}
+
 @media(max-width:480px){
     .contenedor-header{
-        height: 22vh;;
+        height: 22vh;
+        justify-content: center;
     }
-    .contenedor-img-perfil{
+    .perfil{
         width: 20vh;
         height: 20vh;
+        border-radius: 50%;
+    }
+    .contenedor-img-perfil{
+        width: 20.5vh;
+        height: 20.5vh;
         bottom: -6vh;
-        padding: .5vh;
         margin: 0 25%;
     }
     .log-out-1{
@@ -74,59 +150,32 @@ main{
     .log-out-2{
         display: revert;
     }
-    main{
-        margin-top: 5%;
-        font-size: 2vh;
-    }
-    .descripcion{
+    article.descripcion{
         text-align: center;
-        margin:12% 5% 10% 5%;
-        font-size: 2.5vh;
+        margin:0 10%;
+        font-size: 3vh;
     }
     .perfil-mini{
-        height: 5vh;
-        width: 5vh;
+        height: 8vh;
+        width: 8vh;
         border-radius: 50%;
+        margin: 0 3% 0 0;
     }
     .t-completa{
         margin: 2% 7% 0 7%;
     }
     .imagen-publicada{
+        height: 100%;
+        width: 100%;
         margin: auto;
     }
     .conetedor-de-imagen{
-        background-color: white
+        background-color:rgb(158, 109, 35) ;
+        margin: auto;
     }
-}
-
-@media(max-width: 990px){
-    .contenedor-img-perfil{
-        width: 15vh;
-        height: 15vh;
-        bottom: -6vh;
-        left: 10%;
-        padding: .5vh;;
-    }
-    .log-out-1{
-        display: none;
-    }
-    .log-out-2{
-        display: revert;
-    }
-    .descripcion{
-        margin:10% 20% 2% 5%;
+    .nav-link{
         font-size: 2vh;
     }
-    .perfil-mini{
-        height: 5vh;
-        width: 5vh;
-        border-radius: 50%;
-    }
-    .imagen-publicada{
-        margin: 0 20%;
-    }
-    .conetedor-de-imagen{
-        border-radius: 1.5vh;
-        background-color: rgb(199, 199, 199);
-    }
+    
 }
+
