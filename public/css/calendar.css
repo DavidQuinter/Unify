@@ -44,4 +44,7 @@ img.imagen-muestra{
         height: 100%;
         width: 100%;
     }
+    a.link-imagen:hover{
+        opacity: .8;
+    }
 }
